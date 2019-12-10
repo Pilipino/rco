@@ -33,7 +33,7 @@ speed_up <- function(obj) {
 ## Background
 
 Common Subexpression Elimination is an optimization that searches for instances of identical expressions, and replaces them with a single variable holding the computed value.
-
+comp=bdcomplete(inat,recs=5)
 For instance, consider the following code:
 
 ```{r eval=FALSE}
@@ -113,4 +113,4 @@ The `opt_common_subexpr` will first detect different "environments", i.e., separ
 * Use information about which functions modify their parent env?
   
   If the optimizer knows which functions modify their parent env, then function
-  calls won't stop optimization
+  calls won't stop optimization,
